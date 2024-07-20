@@ -38,6 +38,24 @@ WHERE amount < 10;
 
 Выборка данных, логические операции
 
+SELECT title, author, price, amount
+FROM book
+WHERE (price<500 OR price>600) AND (price*amount>=5000);
+
+Выборка данных, операторы BETWEEN, IN
+
+SELECT title, author
+FROM book
+WHERE (price BETWEEN 540.50 AND 800) AND amount IN (2,3,5,7);
+
+Выборка данных с сортировкой
+
+SELECT author, title
+FROM book
+WHERE amount BETWEEN 2 AND 14
+ORDER BY author DESC, title ASC;
+
+Выборка данных, оператор LIKE
 
 
 
