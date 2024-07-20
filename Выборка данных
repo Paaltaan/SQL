@@ -57,6 +57,11 @@ ORDER BY author DESC, title ASC;
 
 Выборка данных, оператор LIKE
 
+SELECT title, author
+FROM book
+WHERE title LIKE "%_ _%" AND (author LIKE '%.С.%' OR author LIKE '%С.%')
+ORDER BY title ASC;
+
 
 
 
